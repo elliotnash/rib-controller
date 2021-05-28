@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './map.css';
+import './map.sass';
 class Map extends React.Component {
 
   componentDidMount(): void {
