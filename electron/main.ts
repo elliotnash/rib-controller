@@ -39,8 +39,11 @@ function createWindow() {
     .catch((err) => console.log('An error occurred: ', err));
 
   if (isDev) {
-    win.webContents.openDevTools();
+    // win.webContents.openDevTools();
   }
+
+  win.menuBarVisible = false;
+
 }
 
 app.on('ready', createWindow);
