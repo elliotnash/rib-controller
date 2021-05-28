@@ -1,7 +1,23 @@
-.map
-  background-color: coral
-  border-radius: 15px
-  flex-direction: column
-  margin: 15px
-  height: auto
-  width: 50%
+div
+  &.map-box
+    display: flex
+    background-color: red
+    align-items: stretch
+    flex-direction: column
+    margin: 0
+    padding: 0px
+    height: 100%
+    @media (max-width: 775px)
+      display: none
+    width: 50%
+    column-gap: 10px
+  &.map
+    background-color: coral
+    border-radius: 15px
+    flex: 1
+    $margin: 15px
+    margin-top: $margin
+    margin-right: $margin
+    margin-left: $margin
+    &:last-child
+      margin-bottom: $margin
