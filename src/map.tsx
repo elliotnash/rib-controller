@@ -9,7 +9,9 @@ class Map extends React.Component {
       console.log("Longitude is :", position.coords.longitude);
     }, (err) => {
       console.log(err);
-    });
+    },
+    {timeout: 25000});
+
   }
 
   render(): React.ReactNode {

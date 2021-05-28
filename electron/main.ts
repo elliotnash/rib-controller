@@ -2,6 +2,9 @@ import { app, BrowserWindow } from 'electron';
 import * as path from 'path';
 import * as isDev from 'electron-is-dev';
 import installExtension, { REACT_DEVELOPER_TOOLS } from "electron-devtools-installer";
+import { config } from 'process';
+
+process.env.GOOGLE_API_KEY = "AIzaSyDwr302FpOSkGRpLlUpPThNTDPbXcIn_FM";
 
 let win: BrowserWindow | null = null;
 
